@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "JniExample"
-include(":app")
+include(":JniExample")
