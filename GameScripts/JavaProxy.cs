@@ -24,7 +24,7 @@ public class JavaProxy
 
     public void LogToLogCat(string tag, string message)
     {
-        _javaObject.Call("logToLogCat", tag, message);
+        _javaObject.Call("logToLogcat", tag, message);
     }
 
     public void LogToCSharpThroughJava(string message)

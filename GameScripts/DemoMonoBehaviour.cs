@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class DemoMonoBehaviour : MonoBehaviour
 {
     [SerializeField] public Button button1;
     [SerializeField] public Button button2;
     [SerializeField] public Button button3;
-    [SerializeField] public Transform box;
-    [SerializeField] public float rotateSpeed = 100;
     
     private JavaProxy _javaProxy;
 
@@ -35,10 +33,5 @@ public class GameManager : MonoBehaviour
         {
             _javaProxy.LogToCSharpThroughJava("Message C# -> Java -> C#");
         });
-    }
-
-    void Update()
-    {
-        box.Rotate(0f, 0f, rotateSpeed * Time.deltaTime);
     }
 }
